@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">FoodDelivery</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-tracking">Order Tracking</a></li>
+                <li><a href="#order-cancellation">Order Cancellation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Food Delivery</h1>
+            <p>Your favorite meals delivered fast at your door.</p>
+            <a href="#menu" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/150" alt="Dish">
+                <h3>Dish 1</h3>
+                <p>Description of Dish 1.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/150" alt="Dish">
+                <h3>Dish 2</h3>
+                <p>Description of Dish 2.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://via.placeholder.com/150" alt="Dish">
+                <h3>Dish 3</h3>
+                <p>Description of Dish 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="order-tracking" class="order-section">
+        <h2>Order Tracking</h2>
+        <form id="track-form">
+            <div class="input-group">
+                <input type="text" id="track-order-id" required>
+                <label>Order ID</label>
+            </div>
+            <button type="submit" class="btn">Track Order</button>
+        </form>
+        <div id="order-status"></div>
+    </section>
+
+    <section id="order-cancellation" class="order-section">
+        <h2>Order Cancellation</h2>
+        <form id="cancel-form">
+            <div class="input-group">
+                <input type="text" id="cancel-order-id" required>
+                <label>Order ID</label>
+            </div>
+            <button type="submit" class="btn">Cancel Order</button>
+        </form>
+        <div id="cancellation-status"></div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="input-group">
+                <input type="text" required>
+                <label>Name</label>
+            </div>
+            <div class="input-group">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-group">
+                <textarea required></textarea>
+                <label>Message</label>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
