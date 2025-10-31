@@ -40,7 +40,8 @@ void levelOrder(Node * root){
     queue<int> q;
     q.push(root->val);
     while(q.size()>0){
-        Node * temp=
+        Node * temp=q.front();
+        
     }
 }
 
